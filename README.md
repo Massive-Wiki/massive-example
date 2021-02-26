@@ -20,8 +20,27 @@ The pages in MaSVF Example:
 ## Specific Tool Support
 
 ### Obsidian
+
 Obsidian can read and write the files that comprise this wiki.  Sharing, syncing, and syndicating the wiki files with a MaSVF repo is not included in Obsidian's base features.
 
 There is a third-party plugin, [Obsidian Git](https://github.com/denolehov/obsidian-git), to "backup your [Obsidian.md](https://obsidian.md/) vault to a remote git repository...".  There are also how-tos available on the web for syncing an Obsidian repo with a remote git respository.
 
 Obsidian stores its settings and working metadata about the wiki in the `.obsidian` directory.  To facilitate MaSVF sharing via **git**, `.gitignore`  entries are used to create the directory as needed, and to avoid syndicating the settings and metadata.
+
+### Gollum
+
+Gollum can read and write the files that comprise this wiki.  Note that pages have to be committed via Git before Gollum will know about them.
+
+This wiki contains a [[Home]] page specifically for Gollum.  The preferred home page for MaSVF wikis is [[README]].
+
+If you are familiar with Docker, and you have cloned this repo from GitHub, you can quickly start a Gollum instance pointed to the current working directory with a command like this:
+
+```shell
+docker run --rm -v `pwd`:/wiki -p4567:4567 gollumorg/gollum --ref main
+```
+
+When Gollum is running, visit http://localhost:4567/ (or other port as appropriate from your command).
+
+Use Control-C to stop Gollum.
+
+If you want to run Gollum detached, use the `-d` flag in the `run` command, and `docker stop <container_name>` to stop Gollum.  Find the container name with `docker ps`, or specify it in the `run` command with `--name`.
