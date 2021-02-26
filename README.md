@@ -1,10 +1,10 @@
 # MaSVF Example
 
-This is MaSVF Example, a small example wiki using MaSVF.
+This is MaSVF Example, a small example [MaSVF wiki](https://github.com/peterkaminski/masvf-wiki).
 
 MaSVF is short for "Markdown and Shared Versioned Files". It is pronounced somewhere between "massive" and "massif".
 
-This wiki consits of a few arbitrary pages taken from the [Creative Commons Wiki](https://wiki.creativecommons.org/wiki/Main_Page), for the purposes of illustrating a few interlinked pages of a normal wiki.  Please visit the Creative Commons Wiki for updated, complete content.
+This wiki consists of a few arbitrary pages taken from the [Creative Commons Wiki](https://wiki.creativecommons.org/wiki/Main_Page), for the purposes of illustrating a few interlinked pages of a normal wiki.  Please visit the Creative Commons Wiki for updated, complete content.
 
 Not all features of the original MediaWiki pages were duplicated in this version, and there may have been link translation errors. Caveat lector.
 
@@ -39,7 +39,7 @@ If you are familiar with Docker, and you have cloned this repo from GitHub, you 
 docker run --rm -v `pwd`:/wiki -p4567:4567 gollumorg/gollum --ref main
 ```
 
-When Gollum is running, visit http://localhost:4567/ (or other port as appropriate from your command).
+When Gollum is running, visit [http://localhost:4567/](http://localhost:4567/) (or other port as appropriate from your command).
 
 Use Control-C to stop Gollum.
 
