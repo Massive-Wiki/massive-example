@@ -2,6 +2,8 @@
 
 This is MaSVF Example, a small example [MaSVF wiki](https://github.com/peterkaminski/masvf-wiki).
 
+[It does not present as a wiki at the link above, it just looks like a repository of Markdown files.  You need to use an MaSVF-ish tool to wikify it (see the "Specific Tool Support" section below); or, you can just read the Markdown and "follow" the links in double-brackets by hand.]
+
 MaSVF is short for "Markdown and Shared Versioned Files". It is pronounced somewhere between "massive" and "massif".
 
 This wiki consists of a few arbitrary pages taken from the [Creative Commons Wiki](https://wiki.creativecommons.org/wiki/Main_Page), for the purposes of illustrating a few interlinked pages of a normal wiki.  Please visit the Creative Commons Wiki for updated, complete content.
